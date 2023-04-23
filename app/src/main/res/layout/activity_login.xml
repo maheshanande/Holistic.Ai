@@ -93,6 +93,7 @@
 
                 />
             <EditText
+                android:id="@+id/emailTextbox"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
@@ -106,6 +107,7 @@
                 android:background="@drawable/edit_textbox_bckg"
                 />
             <EditText
+                android:id="@+id/passwordTextBox"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"

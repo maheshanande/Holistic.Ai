@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Diseases">
+        <item>Arthritis</item>
+        <item>Hypertension</item>
+        <item>Asthma</item>
+        <item>Diabetes</item>
+        <item>BackPain</item>
+        <item>Fatigue</item>
+    </array>
+</resources>

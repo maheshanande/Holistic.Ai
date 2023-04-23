@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.material:material:1.6.1@aar">
     <ANNOTATIONS>
-      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/1f5b68807f74f1f76df3b67d19ddfdc5/transformed/material-1.6.1/annotations.zip!/" />
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/a415a984c9c70d70e8efc21f90245d6a/transformed/material-1.6.1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/1f5b68807f74f1f76df3b67d19ddfdc5/transformed/material-1.6.1/jars/classes.jar!/" />
-      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/1f5b68807f74f1f76df3b67d19ddfdc5/transformed/material-1.6.1/res" />
-      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/1f5b68807f74f1f76df3b67d19ddfdc5/transformed/material-1.6.1/AndroidManifest.xml" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/a415a984c9c70d70e8efc21f90245d6a/transformed/material-1.6.1/res" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/a415a984c9c70d70e8efc21f90245d6a/transformed/material-1.6.1/AndroidManifest.xml" />
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/a415a984c9c70d70e8efc21f90245d6a/transformed/material-1.6.1/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

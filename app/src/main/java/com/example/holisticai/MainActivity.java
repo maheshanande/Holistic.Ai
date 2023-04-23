@@ -3,6 +3,8 @@ package com.example.holisticai;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
+
 
 
 
@@ -12,5 +14,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Register_form regf = new Register_form();
+        String x= Register_form.selectedTypeResult;
+        Log.d("TAGmainactvity", "You have selected " + x);
     }
 }

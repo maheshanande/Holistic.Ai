@@ -3,45 +3,107 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent">
 
-
-        <TextView
-
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="76dp"
-            android:text="Welcome User"
-            android:textSize="20dp"
+            app:cardCornerRadius="100dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/fnameTextbox"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.833">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                app:srcCompat="@drawable/avatar_img"
+                tools:layout_editor_absoluteX="75dp"
+                tools:layout_editor_absoluteY="121dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/fnameTextbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="272dp"
+            android:text="Welcome  "
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/cardView4"
+            android:layout_width="317dp"
+            android:layout_height="247dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="19dp"
+            android:backgroundTint="#CFF6FF"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/cardView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fnameTextbox"
+            app:layout_constraintVertical_bias="0.384"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/GoalTextbox"
+                android:layout_width="201dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="208dp"
+                android:elevation="21dp"
+                android:text="Your Goal---> "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/sessionImageView"
+                android:layout_width="match_parent"
+                android:layout_height="207dp"
+                tools:srcCompat="@drawable/session_img" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
             android:id="@+id/cardView5"
-            android:layout_width="350dp"
-            android:layout_height="60dp"
+            android:layout_width="387dp"
+            android:layout_height="68dp"
             app:cardElevation="21dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
 
                     android:drawableTop="@drawable/home1"
                     android:text="Home"
@@ -51,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="10dp"
 
                     android:drawableTop="@drawable/explore"
                     android:text="Explore"
@@ -61,18 +123,19 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
-                    android:layout_marginTop="3dp"
+                    android:layout_marginTop="10dp"
 
                     android:drawableTop="@drawable/system1"
                     android:text="Activity"
                     android:textSize="15sp" />
 
                 <TextView
+                    android:id="@+id/ProfileViewBtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
-                    android:layout_marginTop="3dp"
-
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
                     android:drawableTop="@drawable/user"
                     android:text="Profile"
                     android:textSize="15sp" />

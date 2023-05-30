@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
@@ -18,6 +19,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -36,6 +38,7 @@ public class Register_form extends AppCompatActivity {
     String F_Result = "Not_Found";
     Spinner goalDropdown,diseaseDropdown;
     EditText t1;
+    ScrollView sc;
 
     public static  String selectedTypeResult,selectedTypeResult1;
 
@@ -45,6 +48,7 @@ public class Register_form extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_form);
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         goalDropdown = (Spinner) findViewById((R.id.goalDropDownSpinner));
         diseaseDropdown = findViewById(R.id.DiseaseDropDownSpinner);
         FirstName = findViewById(R.id.fNameEditText);
@@ -56,10 +60,20 @@ public class Register_form extends AppCompatActivity {
         Password = findViewById(R.id.passEditText);
         registerbtn = findViewById(R.id.Register_btn);
         sqLiteHelper = new SQLiteHelper(this);
-
+        sc = findViewById(R.id.regContentScroll);
         Gender = findViewById(R.id.GenderEdittext);
         String[] suggestions = {"Male","Female","Others"};
 
+        int[] location = new int[2];
+        Gender.getLocationInWindow(location);
+
+// Calculate the amount to scroll to make the input box fully visible
+        int scrollAmount = (location[1] + Gender.getHeight()) - sc.getHeight();
+
+// Scroll the view if necessary
+        if (scrollAmount > 0) {
+            sc.smoothScrollBy(0, scrollAmount);
+        }
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, suggestions);
         Gender.setAdapter(adapter);
 
@@ -110,11 +124,6 @@ public class Register_form extends AppCompatActivity {
     public void display(){
         GoalHolder = goalDropdown.getSelectedItem().toString();
         DiseaseHolder = diseaseDropdown.getSelectedItem().toString();
-        Toast.makeText(this, "Mahesh"+GoalHolder, Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "ANande"+DiseaseHolder, Toast.LENGTH_SHORT).show();
-
-
-
     }
 
     private void EmptyEditTextAfterDataInsert() {

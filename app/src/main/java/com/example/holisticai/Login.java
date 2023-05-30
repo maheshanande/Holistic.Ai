@@ -19,6 +19,8 @@ import android.widget.Toast;
 
 
 public class Login extends AppCompatActivity {
+    // Login activity code goes here
+    private SessionManager session;
     EditText password,email;
     String EmailHolder, PasswordHolder;
     AppCompatButton appLoginBtn;
@@ -39,6 +41,15 @@ public class Login extends AppCompatActivity {
         email = findViewById(R.id.emailTextbox);
         password = findViewById(R.id.passwordTextBox);
         sqLiteHelper= new SQLiteHelper(this);
+
+        //Session Variable
+
+        session = new SessionManager(getApplicationContext());
+
+        if (session.isLoggedIn()) {
+            // User is already logged in, redirect to home activity
+            redirectToHome();
+        }
 
         // Get a writable database instance
         android.view.animation.Animation fade_in = AnimationUtils.loadAnimation(this,R.anim.fade_in);
@@ -78,11 +89,13 @@ public class Login extends AppCompatActivity {
        });
     }
 
+
+
     @SuppressLint("Range")
     public void loginFunction() {
         if(EditTextEmptyHolder) {
             // Opening SQLite database write permission.
-            sqLiteDatabaseObj = sqLiteHelper.getWritableDatabase();
+            sqLiteDatabaseObj = sqLiteHelper.getReadableDatabase();
             // Adding search email query to cursor.
             cursor = sqLiteDatabaseObj.query(SQLiteHelper.TABLE_NAME, null, " " + SQLiteHelper.Table_Column_4_Email + "=?", new String[]{EmailHolder}, null, null, null);
 
@@ -120,17 +133,28 @@ public class Login extends AppCompatActivity {
     public void CheckFinalResult(){
         if(TempPassword.equalsIgnoreCase(PasswordHolder))
         {
+            session.setLoggedIn(true); // Set the user as logged in
+            session.setUserData(EmailHolder);
+            redirectToHome();
             Toast.makeText(Login.this,"Login Successful",Toast.LENGTH_LONG).show();
             // Going to Dashboard activity after login success message.
-            Intent intent = new Intent(Login.this, MainActivity.class);
-            // Sending Email to Dashboard Activity using intent.
-            intent.putExtra(UserEmail, EmailHolder);
-            startActivity(intent);
+          /*  Intent intent = new Intent(Login.this, MainActivity.class);*/
+
         }
         else {
             Toast.makeText(Login.this,"UserName or Password is Wrong, Please Try Again.",Toast.LENGTH_LONG).show();
+            TempPassword = "NOT_FOUND" ;
         }
-        TempPassword = "NOT_FOUND" ;
+
     }
+
+    private void redirectToHome() {
+        Intent intent = new Intent(Login.this, MainActivity.class);
+        // Sending Email to Dashboard Activity using intent.
+
+        startActivity(intent);
+      /*  finish(); // Optional: finish the login activity so the user can't go back to it*/
+    }
+
 
 }

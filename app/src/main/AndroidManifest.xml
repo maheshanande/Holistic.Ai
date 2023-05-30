@@ -9,8 +9,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolisticAi">
         <activity
-            android:name=".Register_form"
+            android:name=".User_Profile"
             android:exported="false" />
+        <activity
+            android:name=".Register_form"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".SplashScreen"
             android:exported="true">
@@ -22,7 +26,8 @@
         </activity>
         <activity
             android:name=".Login"
-            android:exported="true" />
+            android:exported="true"
+            android:label="Login"/>
         <activity
             android:name=".MainActivity"
             android:exported="true" />

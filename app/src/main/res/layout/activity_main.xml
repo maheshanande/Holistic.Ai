@@ -79,7 +79,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/sessionImageView"
+                android:id="@+id/curatedSessionImageView"
                 android:layout_width="match_parent"
                 android:layout_height="207dp"
                 tools:srcCompat="@drawable/session_img" />

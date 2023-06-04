@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private SessionManager session;
     TextView Name,Goal,userProfileView;
     String EmailHolder;
-    ImageView img;
+    ImageView startSession;
     String[] Userdata = new String[3];
     SQLiteDatabase sqLiteDatabaseObj;
     SQLiteHelper sqLiteHelper;
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         userProfileView = findViewById(R.id.ProfileViewBtn);
         Name = (TextView)findViewById(R.id.fnameTextbox);
-        img =(ImageView)findViewById(R.id.sessionImageView);
+        startSession =(ImageView)findViewById(R.id.curatedSessionImageView);
         Goal = findViewById(R.id.GoalTextbox);
         session = new SessionManager(getApplicationContext());
 
@@ -45,10 +45,10 @@ public class MainActivity extends AppCompatActivity {
         Name.setText(Name.getText().toString()+Userdata[0]);
         if(Userdata[1].equalsIgnoreCase("Fitness")){
             Toast.makeText(this, "Hiiii", Toast.LENGTH_SHORT).show();
-            img.setImageResource(R.drawable.fitness_icon);
+            startSession.setImageResource(R.drawable.fitness_icon);
         }
         else{
-            img.setImageResource(R.drawable.session_img);
+            startSession.setImageResource(R.drawable.session_img);
         }
 
         if (Userdata[1].equalsIgnoreCase("Target Disease")){
@@ -64,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent profileIntent = new Intent(MainActivity.this,User_Profile.class);
                 startActivity(profileIntent);
+
+            }
+        });
+
+        startSession.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
             }
         });

@@ -1,0 +1,17 @@
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\CMakeLists.txt
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\glslangTargets-release.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\glslangTargets.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\ncnn\ncnn-release.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\ncnn\ncnn.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\ncnn\ncnnConfig.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\OGLCompilerTargets-release.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\OGLCompilerTargets.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\OSDependentTargets-release.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\OSDependentTargets.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\SPIRVTargets-release.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\ncnn-20210720-android-vulkan\x86\lib\cmake\SPIRVTargets.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\opencv-mobile-4.6.0-android\sdk\native\jni\abi-x86\OpenCVConfig.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\opencv-mobile-4.6.0-android\sdk\native\jni\abi-x86\OpenCVModules-release.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\opencv-mobile-4.6.0-android\sdk\native\jni\abi-x86\OpenCVModules.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\opencv-mobile-4.6.0-android\sdk\native\jni\OpenCVConfig-version.cmake
+C:\Users\MAHESH ANANDE\AndroidStudioProjects\HolisticAi\app\src\main\jni\opencv-mobile-4.6.0-android\sdk\native\jni\OpenCVConfig.cmake

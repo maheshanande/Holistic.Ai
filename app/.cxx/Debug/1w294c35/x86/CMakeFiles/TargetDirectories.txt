@@ -1,0 +1,3 @@
+C:/Users/MAHESH ANANDE/AndroidStudioProjects/HolisticAi/app/.cxx/Debug/1w294c35/x86/CMakeFiles/ncnnbodypose.dir
+C:/Users/MAHESH ANANDE/AndroidStudioProjects/HolisticAi/app/.cxx/Debug/1w294c35/x86/CMakeFiles/edit_cache.dir
+C:/Users/MAHESH ANANDE/AndroidStudioProjects/HolisticAi/app/.cxx/Debug/1w294c35/x86/CMakeFiles/rebuild_cache.dir

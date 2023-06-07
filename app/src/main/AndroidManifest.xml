@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.CAMERA"
+        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
+    <uses-feature android:name="android.hardware.camera2.full" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,12 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HolisticAi">
         <activity
+            android:name=".sessionView"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+
+        <activity
             android:name=".User_Profile"
             android:exported="false" />
         <activity
             android:name=".Register_form"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".SplashScreen"
             android:exported="true">
@@ -27,7 +35,7 @@
         <activity
             android:name=".Login"
             android:exported="true"
-            android:label="Login"/>
+            android:label="Login" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

@@ -71,6 +71,9 @@ public class MainActivity extends AppCompatActivity {
         startSession.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent sessionView = new Intent(MainActivity.this,sessionView.class);
+                sessionView.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(sessionView);
 
             }
         });

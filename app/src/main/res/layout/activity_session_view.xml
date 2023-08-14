@@ -1,48 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    tools:context=".sessionView">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:id="@+id/vClassificationOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/swPoseClassification"
+            android:text="@string/tfe_pe_tv_pose_classification" />
 
-        <Button
-            android:id="@+id/buttonSwitchCamera"
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swPoseClassification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="button switch" />
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 
-    </LinearLayout>
+    <TextView
+        android:id="@+id/poseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:textAlignment="center"
+        android:elevation="21dp"
+        android:text="--------"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-
-        <Spinner
-            android:id="@+id/spinnerModel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawSelectorOnTop="true"
-            android:entries="@array/model_array" />
-
-        <Spinner
-            android:id="@+id/spinnerCPUGPU"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawSelectorOnTop="true"
-            android:entries="@array/cpugpu_array" />
-
-    </LinearLayout>
 
     <SurfaceView
-        android:id="@+id/cameraview"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent" />
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="54dp"/>
 
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/yogaImage"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="200dp"
+        android:contentDescription="TODO" />
+    <TextView
+        android:id="@+id/TimerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:textAlignment="center"
+        android:textSize="200sp"
+        android:textColor="@color/black" />
+
+
+
+    <include layout="@layout/bottom_sheet_layout"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

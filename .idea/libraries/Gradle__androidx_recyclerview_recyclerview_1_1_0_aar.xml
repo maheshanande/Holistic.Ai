@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.recyclerview:recyclerview:1.1.0@aar">
     <ANNOTATIONS>
-      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/9a156e10bc2cc6926719f38d9612f7be/transformed/recyclerview-1.1.0/annotations.zip!/" />
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/6e41eef09aff8c1fa24a8c9e069616d8/transformed/recyclerview-1.1.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/9a156e10bc2cc6926719f38d9612f7be/transformed/recyclerview-1.1.0/jars/classes.jar!/" />
-      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/9a156e10bc2cc6926719f38d9612f7be/transformed/recyclerview-1.1.0/res" />
-      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/9a156e10bc2cc6926719f38d9612f7be/transformed/recyclerview-1.1.0/AndroidManifest.xml" />
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/6e41eef09aff8c1fa24a8c9e069616d8/transformed/recyclerview-1.1.0/jars/classes.jar!/" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/6e41eef09aff8c1fa24a8c9e069616d8/transformed/recyclerview-1.1.0/res" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/6e41eef09aff8c1fa24a8c9e069616d8/transformed/recyclerview-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

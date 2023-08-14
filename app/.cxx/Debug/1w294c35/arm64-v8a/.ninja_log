@@ -5,3 +5,6 @@
 7756	9759	7078190463531422	C:/Users/MAHESH ANANDE/AndroidStudioProjects/HolisticAi/app/build/intermediates/cxx/Debug/1w294c35/obj/arm64-v8a/libncnnbodypose.so	80fdc2e5d8452860
 14	4424	7078194249888272	CMakeFiles/ncnnbodypose.dir/nanodetncnn.cpp.o	f8e064c8bfc3b411
 4425	5814	7078194262951873	C:/Users/MAHESH ANANDE/AndroidStudioProjects/HolisticAi/app/build/intermediates/cxx/Debug/1w294c35/obj/arm64-v8a/libncnnbodypose.so	80fdc2e5d8452860
+238	17008	7079313233550425	CMakeFiles/ncnnbodypose.dir/nanodetncnn.cpp.o	f8e064c8bfc3b411
+359	17411	7079313238602305	CMakeFiles/ncnnbodypose.dir/nanodet.cpp.o	f0231304ec22015c
+17412	21751	7079313278956522	C:/Users/MAHESH ANANDE/AndroidStudioProjects/HolisticAi/app/build/intermediates/cxx/Debug/1w294c35/obj/arm64-v8a/libncnnbodypose.so	80fdc2e5d8452860

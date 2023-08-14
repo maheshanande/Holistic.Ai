@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.activity:activity:1.7.2@aar">
+    <CLASSES>
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/a289efbd5a48effcd98c130d30c2215f/transformed/activity-1.7.2/jars/classes.jar!/" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/a289efbd5a48effcd98c130d30c2215f/transformed/activity-1.7.2/res" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/a289efbd5a48effcd98c130d30c2215f/transformed/activity-1.7.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/modules-2/files-2.1/androidx.activity/activity/1.7.2/2f5e8ceeb74490d8c6d12bdd94dcca61bfaf5a4/activity-1.7.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

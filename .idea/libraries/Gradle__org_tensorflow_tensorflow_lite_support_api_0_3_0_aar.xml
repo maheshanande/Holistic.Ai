@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.tensorflow:tensorflow-lite-support-api:0.3.0@aar">
+    <CLASSES>
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/4ca485ed8dfe189518fda72f554a6467/transformed/tensorflow-lite-support-api-0.3.0/jars/classes.jar!/" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/4ca485ed8dfe189518fda72f554a6467/transformed/tensorflow-lite-support-api-0.3.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

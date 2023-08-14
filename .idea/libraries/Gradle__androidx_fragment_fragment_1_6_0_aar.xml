@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.fragment:fragment:1.6.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/5b3b33fb165ba38f43de697866fd2db5/transformed/fragment-1.6.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/5b3b33fb165ba38f43de697866fd2db5/transformed/fragment-1.6.0/jars/classes.jar!/" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/5b3b33fb165ba38f43de697866fd2db5/transformed/fragment-1.6.0/res" />
+      <root url="file://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/transforms-3/5b3b33fb165ba38f43de697866fd2db5/transformed/fragment-1.6.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Installers/gradle-7.2-bin/gradle-7.2/caches/modules-2/files-2.1/androidx.fragment/fragment/1.6.0/d98e3ab477bb455cfd2e1eee84631ecf2d297d3c/fragment-1.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

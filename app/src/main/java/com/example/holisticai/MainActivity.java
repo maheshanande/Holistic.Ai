@@ -6,16 +6,12 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
 
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.time.DayOfWeek;
-import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -71,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         startSession.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent sessionView = new Intent(MainActivity.this,sessionView.class);
+                Intent sessionView = new Intent(MainActivity.this, sessionView.class);
                 sessionView.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(sessionView);
 
